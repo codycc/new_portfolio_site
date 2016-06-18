@@ -17,5 +17,9 @@
 //= require_tree .
 
 $(document).on('ready',function(){
+   
+    $('.jumbotron h1').fadeIn(2000);
+    $('.jumbotron h2').fadeIn(6000);
+    $('.jumbotron a').fadeIn(2000);
 
 });

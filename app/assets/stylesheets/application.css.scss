@@ -25,23 +25,27 @@ p, a, h1, h2, h3, h4, h5, h6,  {
    background:linear-gradient(
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
-        ),url("bg4.jpg")no-repeat center center fixed;
+        ),url("giphy2.gif")no-repeat center center fixed;
     background-size:cover;
     height:100vh;
-    margin-bottom:0px;;
+    margin-bottom:0px;
     text-align:center;
 
     h1,h2 {
         color:white;
+       
     }
     h1 {
         padding-top:70px;
         font-size: 700%;
-        text-shadow: 2px 2px grey;
+        text-shadow: 2px 2px #313C81;
         font-style:italic;
+        letter-spacing:1px;
+        display:none;
     }
     h2 {
-        text-shadow: 1px 1px #d3d3d3;    
+        text-shadow: 1px 1px #d3d3d3;  
+        display:none;  
     }
     .button1 {
         background-color:black;
@@ -49,6 +53,7 @@ p, a, h1, h2, h3, h4, h5, h6,  {
         position:relative;
         top:25px;
         color:white;
+        display:none;
         &:hover {
             text-decoration:none;
             opacity:0.6;
@@ -63,15 +68,22 @@ p, a, h1, h2, h3, h4, h5, h6,  {
     ul {
         padding:0px;
         margin:0px;
+        background:url('bluebg.jpg')no-repeat center center fixed;
 
     }
 
     li {
         padding: 15px 5px;
         border: 1px solid black;
-        background:grey;
+        background-color: rgba(0, 0, 0, 0.9);
+        
+
         &:hover {
             cursor:pointer;
+            background-color: rgba(0, 0, 0, 0.8);
+            a{
+                font-style:italic;
+            }
           
         }
         a {
@@ -79,7 +91,7 @@ p, a, h1, h2, h3, h4, h5, h6,  {
             display:block;
             font-size:300%;
             padding-left:30px;
-            color:black;
+            color:white;
             font-weight:bold;
             letter-spacing:2px;
             &:hover {
@@ -111,11 +123,15 @@ p, a, h1, h2, h3, h4, h5, h6,  {
       }
       .info {
           text-align:center;
+          margin-top:30px;
       }
       img {
-          height:150px;
+          height:200px;
           border: 1px solid white;
+          border-radius:50%;
+          
     }
 
 
 }
+
