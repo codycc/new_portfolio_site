@@ -22,51 +22,69 @@ p, a, h1, h2, h3, h4, h5, h6,  {
 }
 
 .jumbotron { 
-    background: url('bg.jpg') no-repeat center center fixed;
+   background:linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+        ),url("bg4.jpg")no-repeat center center fixed;
     background-size:cover;
     height:100vh;
     margin-bottom:0px;;
     text-align:center;
 
     h1,h2 {
-
         color:white;
     }
     h1 {
+        padding-top:70px;
         font-size: 700%;
-        padding-top:100px;
-        text-shadow: 2px 2px #d3d3d3;
+        text-shadow: 2px 2px grey;
+        font-style:italic;
     }
     h2 {
-        text-shadow: 1px 1px #d3d3d3;
+        text-shadow: 1px 1px #d3d3d3;    
     }
     .button1 {
         background-color:black;
-        padding: 15px 20px;
+        padding: 15px 35px;
         position:relative;
-        top:15px;
+        top:25px;
+        color:white;
+        &:hover {
+            text-decoration:none;
+            opacity:0.6;
+            cursor:pointer;
+            background-color:white;
+            color:black;
+        }
     }
-
 }
 
 .projects { 
     ul {
-        padding-left: 0px;
+        padding:0px;
+        margin:0px;
+
     }
+
     li {
-        padding: 5px 5px;
-        background-color:#F1F1F1;
-        border: 1px solid grey;
+        padding: 15px 5px;
+        border: 1px solid black;
+        background:grey;
         &:hover {
-            background-color:white;
+            cursor:pointer;
+          
         }
         a {
+            text-shadow: 1px 1px black;  
+            display:block;
             font-size:300%;
             padding-left:30px;
             color:black;
+            font-weight:bold;
+            letter-spacing:2px;
             &:hover {
                 text-decoration:none;
-                cursor:pointer;
+             
             }
         }
     }
@@ -74,4 +92,30 @@ p, a, h1, h2, h3, h4, h5, h6,  {
         width:100%;
         list-style-type:none;
     }
+} 
+
+.section2 { 
+      background:linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+        ),url("bg2.jpg")no-repeat center center fixed;
+      background-size:cover;
+      height:600px;
+      h1{
+        color:white;
+        font-weight:bold;
+        text-shadow: 1px 1px grey;
+      } 
+      p {
+          color:white;
+      }
+      .info {
+          text-align:center;
+      }
+      img {
+          height:150px;
+          border: 1px solid white;
+    }
+
+
 }
