@@ -22,4 +22,14 @@ $(document).on('ready',function(){
     $('.jumbotron h2').fadeIn(6000);
     $('.jumbotron a').fadeIn(2000);
 
+
+
+    $(".button1").click(function() {
+    var offset = 20; //Offset of 20px
+
+    $('html, body').animate({
+        scrollTop: $("ul").offset().top + offset
+    }, 2000);
+});
+
 });
